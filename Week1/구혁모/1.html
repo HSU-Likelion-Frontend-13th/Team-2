@@ -4,27 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
+    <script src="fun.js"></script>
     <title>My Web Study Note</title>
   </head>
   <body>
-    <input
-      type="button"
-      value="dark"
-      class="dark"
-      onclick="
-      document.querySelector('body').style.backgroundColor = 'black';
-      document.querySelector('body').style.color = 'white';
-      "
-    />
-    <input
-      type="button"
-      value="light"
-      onclick="
-      document.querySelector('body').style.backgroundColor = 'white';
-      document.querySelector('body').style.color = 'black';
-      "
-    />
+    <input type="button" value="dark" class="dark" onclick="onClickDark()" />
+    <input type="button" value="light" onclick="onClickLight()" />
     <h1><a href="index.html">My WEB Study Note</a></h1>
 
     <ol>
