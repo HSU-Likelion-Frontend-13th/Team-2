@@ -52,3 +52,95 @@ nav div {
   font-weight: bold;
   text-align: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  background-color: #f3f5ff;
+}
+
+h1 {
+  color: #ff804a;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 10vw;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 2.8rem;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  padding: 2rem 5rem;
+
+  img {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #ebedf8;
+  }
+
+  p {
+    color: #ff804a;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  img {
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.intro {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 9vw;
+}
+
+.mini-card {
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+    color: #626682;
+    font-weight: bold;
+  }
+}
