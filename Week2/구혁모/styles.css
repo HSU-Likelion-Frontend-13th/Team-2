@@ -37,13 +37,14 @@ nav div {
     font-size: 1.5rem;
     color: black;
     font-weight: 400;
+    &:hover {
+        text-decoration: underline;
+      }
   }
 }
 
 .first {
   display: flex;
-  width: 100vw;
-  height: 80vh;
   background-color: #ff804a;
   color: white;
   align-items: center;
@@ -51,6 +52,7 @@ nav div {
   font-size: 5rem;
   font-weight: bold;
   text-align: center;
+  padding: 13vw;
 }
 
 .container {
@@ -84,7 +86,7 @@ h1 {
   align-items: center;
   gap: 1.5rem;
   border-radius: 1rem;
-  padding: 0 5rem;
+  padding: 2rem;
   width: 23.75rem;
   img {
     width: 12.5rem;
