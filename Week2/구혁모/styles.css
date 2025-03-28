@@ -72,9 +72,10 @@ h1 {
 }
 
 .about {
-  display: flex;
-  justify-content: center;
-  gap: 2.8rem;
+  max-width: 1184px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.4rem;
   padding-bottom: 20vh;
 }
 
@@ -123,12 +124,13 @@ h1 {
 
 .intro {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 9vw;
+  grid-template-rows: 3fr 1fr;
+  gap: 1.4rem;
 }
 
 .mini-card {
+  min-width: 380px;
   h3 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -141,10 +143,10 @@ h1 {
 }
 
 .hobby {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.4rem;
+  padding-bottom: 20vh;
 }
 
 .hobby-card {
