@@ -38,8 +38,8 @@ nav div {
     color: black;
     font-weight: 400;
     &:hover {
-        text-decoration: underline;
-      }
+      text-decoration: underline;
+    }
   }
 }
 
@@ -169,5 +169,28 @@ h1 {
   }
   img {
     padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0;
+    div {
+      gap: 0;
+    }
+  }
+  .hobby {
+    grid-template-columns: 1fr;
+  }
+  .first {
+    font-size: 3rem;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    .intro {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
   }
 }
