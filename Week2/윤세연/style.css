@@ -58,7 +58,7 @@
     border: 0.1vw solid #EBEDF8;
     border-radius: 2vw;
     width: 22vw;
-    margin-left: 15vw;
+    margin-left: 19vw;
     padding: 1vw;
 }
 
@@ -130,8 +130,7 @@
 
 .listdetail{
     background-color: #4A86FF;
-    
-    width: 17vw;
+    width: 20vw;
     height: 3.5vw;
     color: white;
     font-weight: 900;
@@ -142,8 +141,8 @@
 }
 
 .img_boder{
-    width: 17vw;
-    height: 13vw;
+    width: 20vw;
+    height: 17vw;
     border: 0.01vw solid #EBEDF8;
     border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
@@ -155,6 +154,6 @@
 
 #hobby_list img{
     border-radius: 1vw;
-    width: 14vw;
-    height: 10vw;
+    width: 16vw;
+    height: 13vw;
 }
