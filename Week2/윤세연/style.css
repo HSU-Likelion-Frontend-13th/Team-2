@@ -1,43 +1,98 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-#h{
+#h {
     display: flex;
     justify-content: space-between;
 }
 
-#c{
+#c {
     margin-left: 10vw;
 }
 
-#logo{
-    color : #4A86FF;
-    margin-top : 1vw;
+#logo {
+    color: #4A86FF;
+    margin-top: 1vw;
     font-size: 2vw;
     margin-left: 6vw;
 }
 
-#category{
+#category {
     display: flex;
     gap: 4vw;
     font-size: 1vw;
-    margin-top : 1.8vw;
+    margin-top: 1.8vw;
 }
 
 /*소갯말 css*/
-#Introduction{
+#Introduction {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.2vw;
     margin-top: 1.5vw;
-    background-color:#4A86FF;
+    background-color: #4A86FF;
     height: 28vw;
 }
-.word{
+.word {
     color: white;
     font-size: 2.7vw;
     font-family: "Jua", sans-serif;
 }
+
+/*프로필 css*/
+#about {
+    color: #4A86FF;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    text-align: center;
+}
+
+#profile {
+    border: 0.1vw solid lightgray;
+    border-radius: 2vw;
+    width: 22vw;
+    margin-left: 15vw;
+    padding: 1vw;
+}
+
+#profile_img{
+    margin-top: 1vw;
+    margin-left: 5.2vw;
+    margin-bottom: 1vw;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile_item img{
+    width: 2vw;
+    height: 2vw;
+    object-fit: cover;
+}
+
+#name {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    text-align: center;
+    color: #4A86FF;
+}
+
+.profile_item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+    margin-bottom: 1vw;
+}
+
+.profile_item{
+    font-size: 1.3vw;
+}
+
+
