@@ -114,7 +114,11 @@
     row-gap: 10vw;
     margin-bottom: 9vw;
 }
-
+#hobby_list {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
 .title{
     font-size: 2vw;
     margin-bottom: 1.3vw;
@@ -124,5 +128,32 @@
     font-size: 1.2vw;
 }
 
+.listdetail{
+    background-color: #4A86FF;
+    
+    width: 17vw;
+    height: 3.5vw;
+    color: white;
+    font-weight: 900;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    display: grid;
+    place-items: center;
+}
 
+.img_boder{
+    width: 17vw;
+    height: 13vw;
+    border: 0.01vw solid #EBEDF8;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#hobby_list img{
+    border-radius: 1vw;
+    width: 14vw;
+    height: 10vw;
+}
