@@ -44,7 +44,7 @@
 }
 
 /*프로필 css*/
-#about {
+#about, #hobby {
     color: #4A86FF;
     font-weight: 900;
     font-size: 4vw;
@@ -97,5 +97,32 @@
 .profile_item{
     font-size: 1.3vw;
 }
+
+#Introduction_ABOUT{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3vw;
+}
+
+#Detail {
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 8vw;
+    row-gap: 10vw;
+    margin-bottom: 9vw;
+}
+
+.title{
+    font-size: 2vw;
+    margin-bottom: 1.3vw;
+}
+
+.content{
+    font-size: 1.2vw;
+}
+
 
 
