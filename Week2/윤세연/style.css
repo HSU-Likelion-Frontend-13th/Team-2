@@ -150,6 +150,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20vw;
 }
 
 #hobby_list img{
