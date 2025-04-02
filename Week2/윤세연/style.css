@@ -138,6 +138,7 @@
     border-top-right-radius: 1vw;
     display: grid;
     place-items: center;
+    font-size: 1.6vw;
 }
 
 .img_boder{
