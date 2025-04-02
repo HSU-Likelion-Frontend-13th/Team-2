@@ -27,6 +27,7 @@
 
 /*소갯말 css*/
 #Introduction {
+    font-weight: 900;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,15 +46,16 @@
 /*프로필 css*/
 #about {
     color: #4A86FF;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 4vw;
-    margin-top: 1vw;
+    margin-top: 2.4vw;
     margin-bottom: 3vw;
-    text-align: center;
+    text-align: center
 }
 
+
 #profile {
-    border: 0.1vw solid lightgray;
+    border: 0.1vw solid #EBEDF8;
     border-radius: 2vw;
     width: 22vw;
     margin-left: 15vw;
@@ -89,6 +91,7 @@
     justify-content: flex-start;
     gap: 1vw;
     margin-bottom: 1vw;
+    margin-left: 1.3vw;
 }
 
 .profile_item{
