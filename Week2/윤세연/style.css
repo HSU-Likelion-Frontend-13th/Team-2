@@ -13,16 +13,31 @@
 
 #logo{
     color : #4A86FF;
-    margin-top : 3vw;
-    font-size: 2.5vw;
+    margin-top : 1vw;
+    font-size: 2vw;
     margin-left: 6vw;
 }
 
 #category{
     display: flex;
-    gap: 3vw;
-    font-size: 1.2vw;
-    margin-top : 4.5vw;
+    gap: 4vw;
+    font-size: 1vw;
+    margin-top : 1.8vw;
 }
 
-
+/*소갯말 css*/
+#Introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2vw;
+    margin-top: 1.5vw;
+    background-color:#4A86FF;
+    height: 28vw;
+}
+.word{
+    color: white;
+    font-size: 2.7vw;
+    font-family: "Jua", sans-serif;
+}
