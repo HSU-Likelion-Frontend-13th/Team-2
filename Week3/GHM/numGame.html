@@ -64,6 +64,7 @@
         if (inputNum.value == randomNum) {
           lastResult.textContent = "축하합니다! 맞췄습니다!";
           lastResult.style.backgroundColor = "green";
+          lowOrHi.textContent = "";
           newGame();
         } else if (inputNum.value !== "") {
           lastResult.textContent = "틀렸습니다!";
