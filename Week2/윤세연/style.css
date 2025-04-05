@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+#h {
+    display: flex;
+    justify-content: space-between;
+}
+
+#c {
+    margin-left: 10vw;
+}
+
+#logo {
+    color: #4A86FF;
+    margin-top: 1vw;
+    font-size: 2vw;
+    margin-left: 6vw;
+}
+
+#category {
+    display: flex;
+    gap: 4vw;
+    font-size: 1vw;
+    margin-top: 1.8vw;
+}
+
+/*소갯말 css*/
+#Introduction {
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2vw;
+    margin-top: 1.5vw;
+    background-color: #4A86FF;
+    height: 28vw;
+}
+.word {
+    color: white;
+    font-size: 2.7vw;
+    font-family: "Jua", sans-serif;
+}
+
+/*프로필 css*/
+#about, #hobby {
+    color: #4A86FF;
+    font-weight: 900;
+    font-size: 4vw;
+    margin-top: 2.4vw;
+    margin-bottom: 3vw;
+    text-align: center
+}
+
+
+#profile {
+    border: 0.1vw solid #EBEDF8;
+    border-radius: 2vw;
+    width: 22vw;
+    margin-left: 19vw;
+    padding: 1vw;
+}
+
+#profile_img{
+    margin-top: 1vw;
+    margin-left: 5.2vw;
+    margin-bottom: 1vw;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile_item img{
+    width: 2vw;
+    height: 2vw;
+    object-fit: cover;
+}
+
+#name {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    text-align: center;
+    color: #4A86FF;
+}
+
+.profile_item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 1.3vw;
+}
+
+.profile_item{
+    font-size: 1.3vw;
+}
+
+#Introduction_ABOUT{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3vw;
+}
+
+#Detail {
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 8vw;
+    row-gap: 10vw;
+    margin-bottom: 9vw;
+}
+#hobby_list {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.title{
+    font-size: 2vw;
+    margin-bottom: 1.3vw;
+}
+
+.content{
+    font-size: 1.2vw;
+}
+
+.listdetail{
+    background-color: #4A86FF;
+    width: 20vw;
+    height: 3.5vw;
+    color: white;
+    font-weight: 900;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    display: grid;
+    place-items: center;
+    font-size: 1.6vw;
+}
+
+.img_boder{
+    width: 20vw;
+    height: 17vw;
+    border: 0.01vw solid #EBEDF8;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vw;
+}
+
+#hobby_list img{
+    border-radius: 1vw;
+    width: 16vw;
+    height: 13vw;
+}
