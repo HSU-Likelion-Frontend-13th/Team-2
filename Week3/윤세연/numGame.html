@@ -78,11 +78,13 @@
                     lastResult.textContent = "축하합니다! 정답입니다!";
                     lastResult.style.backgroundColor = "green";
                     lowOrHi.textContent = '';
+                    End();
                 } 
                 else if (count == 10){
                     lastResult.textContent = "10회의 기회가 끝났습니다. 정답은 " + randomNum + "입니다.";
                     lastResult.style.backgroundColor = "grey ";
                     lowOrHi.textContent = '';
+                    End();
                 } 
                 else{
                     lastResult.textContent = "틀렸습니다!";
@@ -104,6 +106,7 @@
                 count = 1;
                 guesses.textContent = '';
                 lastResult.textContent = '';
+                lastResult.style.backgroundColor = "white";
                 lowOrHi.textContent = '';
                 guessField.disabled = false;
                 guessSubmit.disabled = false;
@@ -113,7 +116,11 @@
                 restartBtn.remove();
             });
             
-            
+            function End() {
+                guessField.disabled = true;
+                guessSubmit.disabled = true;
+                resultParas.appendChild(restartBtn);
+            }
         </script>
     </body>
 </html>
