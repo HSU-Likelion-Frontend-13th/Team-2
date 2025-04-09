@@ -54,7 +54,7 @@
         </div>
 
         <script>
-            const randomNum = Math.floor(Math.random() * 100) + 1;
+            let randomNum = Math.floor(Math.random() * 100) + 1;
             let count = 1;
 
             const guessField = document.querySelector('.guessField');
@@ -97,6 +97,22 @@
                 guessField.focus();
             });
 
+            const restartBtn = document.createElement('button');
+            restartBtn.textContent = '새 게임 시작하기';
+
+            restartBtn.addEventListener('click', (e)=> { 
+                count = 1;
+                guesses.textContent = '';
+                lastResult.textContent = '';
+                lowOrHi.textContent = '';
+                guessField.disabled = false;
+                guessSubmit.disabled = false;
+                guessField.value = '';
+                guessField.focus();
+                randomNum = Math.floor(Math.random() * 100) + 1;
+                restartBtn.remove();
+            });
+            
             
         </script>
     </body>
