@@ -57,25 +57,43 @@
             const randomNum = Math.floor(Math.random() * 100) + 1;
             let count = 1;
 
-            const guessField = document.querySelector('.guessField'); //입력창
-            const guessSubmit = document.querySelector('.guessSubmit'); //제출 버튼            const resultParas = document.querySelector('.resultParas');
-            const guesses = document.querySelector('.guesses'); // 입력한 수
-            const lastResult = document.querySelector('.lastResult'); // 결과
-            const lowOrHi = document.querySelector('.lowOrHi');  // 더 큰지 작은지
+            const guessField = document.querySelector('.guessField');
+            const guessSubmit = document.querySelector('.guessSubmit');            
+            const resultParas = document.querySelector('.resultParas');
+            const guesses = document.querySelector('.guesses');
+            const lastResult = document.querySelector('.lastResult');
+            const lowOrHi = document.querySelector('.lowOrHi'); 
 
-            function Answer() {
+            guessSubmit.addEventListener('click', () => {
                 const value = Number(guessField.value);
 
                 if(!value) return;
 
-                if (count === 1){
+                if (count == 1){
                     guesses.textContent = "예측한 숫자들 : "
                 }
                 guesses.textContent += value + ' ';
                 
-            }
+                if(randomNum == value) {
+                    lastResult.textContent = "축하합니다! 정답입니다!";
+                    lowOrHi.textContent = '';
+                } 
+                else if (count == 10){
+                    lowOrHi.textContent = '';
+                } 
+                else{
+                    lastResult.textContent = "틀렸습니다!";
+                    if(randomNum < value)
+                        lowOrHi.textContent = "예측한 값이 큽니다!";
+                    else   
+                        lowOrHi.textContent = "예측한 값이 너무 작습니다!";
+                }
+                count++;
+                guessField.value = ''; //입력창 초기화
+                guessField.focus();
+            });
 
-            guessSubmit.addEventListener('click', Answer);
+            
         </script>
     </body>
 </html>
