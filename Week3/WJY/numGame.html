@@ -96,6 +96,11 @@
         }
 
         guessSubmit.addEventListener('click', checkGuess);
+        guessField.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            checkGuess();
+          }
+        });
 
         //게임 종료
         function setGameOver() {
