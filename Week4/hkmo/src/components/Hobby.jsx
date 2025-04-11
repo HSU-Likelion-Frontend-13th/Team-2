@@ -50,7 +50,7 @@ const Top = styled.div`
 export const Hobby = () => {
   return (
     <>
-      <Title>HOBBY</Title>
+      <Title id="hobby">HOBBY</Title>
       <Wrapper>
         <Card>
           <Top>게임</Top>

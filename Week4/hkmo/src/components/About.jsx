@@ -95,9 +95,9 @@ const MiniCard = styled.div`
 export const About = () => {
   return (
     <>
-      <Title>ABOUT</Title>
+      <Title id="about">ABOUT</Title>
       <Wrapper>
-        <Profile>
+        <Profile id="contact">
           <img src={profile} alt="" />
           <p>구혁모</p>
           <Contacts>

@@ -45,11 +45,11 @@ const LinkText = styled.a`
 export const Header = () => {
   return (
     <Wrapper>
-      <Logo>PORTFOLIO.</Logo>
+      <Logo href="index.html">PORTFOLIO.</Logo>
       <LinkWrapper>
-        <LinkText>ABOUT</LinkText>
-        <LinkText>HOBBY</LinkText>
-        <LinkText>CONTACT</LinkText>
+        <LinkText href="#about">ABOUT</LinkText>
+        <LinkText href="#hobby">HOBBY</LinkText>
+        <LinkText href="#contact">CONTACT</LinkText>
       </LinkWrapper>
     </Wrapper>
   );
