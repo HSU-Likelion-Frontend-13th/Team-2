@@ -18,6 +18,12 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr 2fr;
   gap: 1.4rem;
   padding-bottom: 20vh;
+  @media (max-width: 1240px) {
+    grid-template-columns: 1fr;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Profile = styled.div`
@@ -67,6 +73,10 @@ const Details = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3fr 1fr;
   gap: 1.4rem;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 `;
 
 const MiniCard = styled.div`
@@ -88,28 +98,43 @@ export const About = () => {
       <Title>ABOUT</Title>
       <Wrapper>
         <Profile>
-          <img src={profile} alt=""/>
+          <img src={profile} alt="" />
           <p>구혁모</p>
           <Contacts>
             <ContactList>
-              <img src={phone} alt=""/>010.6257.1161
+              <img src={phone} alt="" />
+              010.6257.1161
             </ContactList>
             <ContactList>
-              <img src={email} alt=""/>gurah129@hansung.ac.kr
+              <img src={email} alt="" />
+              gurah129@hansung.ac.kr
             </ContactList>
             <ContactList>
-              <img src={mappin} alt=""/>경기도 남양주시
+              <img src={mappin} alt="" />
+              경기도 남양주시
             </ContactList>
           </Contacts>
         </Profile>
         <Details>
           <MiniCard>
             <h3>EDUCATION</h3>
-            <p>한성대학교 컴퓨터공학부<br />2020.03~</p>
+            <p>
+              한성대학교 컴퓨터공학부
+              <br />
+              2020.03~
+            </p>
           </MiniCard>
           <MiniCard>
             <h3>SKILLS</h3>
-            <p>Python<br />Java<br />C++<br />JavaScript</p>
+            <p>
+              Python
+              <br />
+              Java
+              <br />
+              C++
+              <br />
+              JavaScript
+            </p>
           </MiniCard>
           <MiniCard>
             <h3>WORK</h3>

@@ -15,6 +15,12 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.4rem;
   padding-bottom: 20vh;
+  @media (max-width: 1240px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Card = styled.div`

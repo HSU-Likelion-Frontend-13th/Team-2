@@ -10,6 +10,9 @@ const Wrapper = styled.div`
   font-weight: bold;
   text-align: center;
   padding: 13vw;
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 
 export const Frist = () => {
