@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { About } from "./About";
+import { Hobby } from "./Hobby";
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,6 +15,7 @@ export const Main = () => {
   return (
     <Wrapper>
       <About />
+      <Hobby />
     </Wrapper>
   );
 };
