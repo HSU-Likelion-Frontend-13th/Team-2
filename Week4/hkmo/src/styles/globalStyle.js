@@ -1,9 +1,7 @@
 import { createGlobalStyle } from "styled-components";
-import reset from "styled-reset";
 
 const GlobalStyle = createGlobalStyle`
-  ${reset};
-  @font-face {
+@font-face {
   font-family: "Interop";
   src: url("https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff2")
       format("woff2"),
@@ -15,6 +13,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
 * {
+  box-sizing: border-box;
+  margin: 0;
   font-family: "Interop";
 }
 `;
