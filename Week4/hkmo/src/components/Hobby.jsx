@@ -1,7 +1,4 @@
 import styled from "styled-components";
-import lol from "../assets/lol.svg";
-import pingpong from "../assets/tabletennis.svg";
-import bowling from "../assets/bowling.svg";
 
 const Title = styled.h1`
   color: #ff804a;
@@ -47,22 +44,23 @@ const Top = styled.div`
   width: 100%;
 `;
 
-export const Hobby = () => {
+export const Hobby = (props) => {
+  
   return (
     <>
       <Title id="hobby">HOBBY</Title>
       <Wrapper>
         <Card>
-          <Top>게임</Top>
-          <img src={lol} alt="" />
+          <Top>{props.first.title}</Top>
+          <img src={props.first.img} alt="" />
         </Card>
         <Card>
-          <Top>탁구 치기</Top>
-          <img src={pingpong} alt="" />
+          <Top>{props.seconds.title}</Top>
+          <img src={props.seconds.img} alt="" />
         </Card>
         <Card>
-          <Top>볼링 치기</Top>
-          <img src={bowling} alt="" />
+          <Top>{props.third.title}</Top>
+          <img src={props.third.img} alt="" />
         </Card>
       </Wrapper>
     </>
