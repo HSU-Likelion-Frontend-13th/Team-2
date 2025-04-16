@@ -9,7 +9,7 @@ export default function Nav() {
                 <div><strong>빠르게 성장할 줄 아는 개발자가 되고 싶어요 :)</strong></div>
             </Word>
     </Introduction>
-    )
+    ) 
 }
 
 const Introduction = styled.nav`
