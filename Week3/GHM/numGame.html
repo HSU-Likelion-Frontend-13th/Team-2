@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>숫자 맞히기 게임</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .form input[type="number"] {
+        width: 200px;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>숫자 맞히기 게임</h1>
+
+    <p>
+      1에서 100 사이의 무작위 숫자를 선택합니다. 10턴 이내에 맞출 수 있는지 확인해 보세요. 선택한 숫자가 너무 높았는지 너무 낮았는지 알려드리겠습니다.
+    </p>
+
+    <div class="form">
+      <label for="guessField">예측한 숫자: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField" />
+      <input type="submit" value="예측한 숫자 제출하기" class="guessSubmit" />
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script>
+      // [과제] js 코드를 작성해주세요!
+      const inputNum = document.querySelector("#guessField");
+      const inputBtn = document.querySelector(".guessSubmit");
+      const guesses = document.querySelector(".guesses");
+      const lastResult = document.querySelector(".lastResult");
+      const lowOrHi = document.querySelector(".lowOrHi");
+      const resultParas = document.querySelector(".resultParas");
+
+      let turn = 10; // 남은 턴
+      let randomNum = Math.floor(Math.random() * 100) + 1; // 랜덤 수
+
+      inputBtn.addEventListener("click", () => {
+        guesses.textContent += inputNum.value + " ";
+        if (inputNum.value == randomNum) {
+          lastResult.textContent = "축하합니다! 맞췄습니다!";
+          lastResult.style.backgroundColor = "green";
+          lowOrHi.textContent = "";
+          newGame();
+        } else if (inputNum.value !== "") {
+          lastResult.textContent = "틀렸습니다!";
+          lastResult.style.backgroundColor = "red";
+          turn--;
+
+          if (inputNum.value > randomNum) {
+            lowOrHi.textContent = "예측한 값이 작습니다!";
+          } else {
+            lowOrHi.textContent = "예측한 값이 큽니다!";
+          }
+
+          if (turn == 0) {
+            lastResult.textContent = `턴 종료! 정답은 ${randomNum}입니다! 아쉽습니다.`;
+            newGame();
+          }
+        } else {
+          lastResult.textContent = "숫자를 입력하세요!";
+          lastResult.style.backgroundColor = "red";
+        }
+        inputNum.value = "";
+      });
+
+      const newGame = () => {
+        inputBtn.disabled = true; // 제출 버튼 비활성화
+        const newGameBtn = document.createElement("button"); // 새 게임 버튼 생성
+        newGameBtn.textContent = "새 게임 시작하기";
+        resultParas.appendChild(newGameBtn); // 결과 아래에 버튼 추가
+        newGameBtn.addEventListener("click", () => {
+          location.reload(); // 새로고침
+        });
+      };
+    </script>
+  </body>
+</html>
