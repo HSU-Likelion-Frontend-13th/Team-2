@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const HeaderLayout = styled.div`
+export const HeaderLayout = styled.div `
     width: 100vw;
     height: 8rem;
     display: flex;
@@ -10,6 +10,6 @@ export const HeaderLayout = styled.div`
     gap: 0.5rem;
 `;
 
-export const CheckIcon = styled.img``;
+export const CheckIcon = styled.img ``;
 
-export const Title = styled.h3``;
+export const Title = styled.h3 ``;
