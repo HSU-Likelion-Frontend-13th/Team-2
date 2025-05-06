@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { useState } from "react";
 import CommentEditor from "./CommentEditor";
 import * as S from "../Main.style";
