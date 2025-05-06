@@ -10,7 +10,11 @@ export default function CommentList() {
 
   const addComment = () => {
     if (inputText.trim() === "") return;
-    setCommentList([...CommentList, inputText]); // CommentList 배열에 할일텍스트를 넣는다
+    const newComment = {
+      id: Date.now(),
+      text: inputText,
+    };
+    setCommentList([...CommentList, newComment]); // CommentList 배열에 할일텍스트를 넣는다
     setInputText(""); // 입력창 초기화
   };
 
@@ -25,8 +29,9 @@ export default function CommentList() {
       <S.CommentlistWrapper>
         {CommentList.map((comment, index) => (
           <CommentItem
-            key={index}
-            commentText={comment}
+            key={comment.id}
+            index={index}
+            commentText={comment.text}
             commentList={CommentList}
             setCommentList={setCommentList}
           />
