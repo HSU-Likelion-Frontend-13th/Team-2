@@ -21,6 +21,8 @@ export const InputLayout = styled.div`
   height: 3rem;
   border: 1px solid gray;
   margin: 0.5rem 0;
+  background-color: white;
+  padding-left: 0.5rem;
 `;
 
 export const InputContainer = styled.input`
@@ -69,6 +71,7 @@ export const CommentItemLayout = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem;
+  position: relative;
 `;
 
 export const CommentText = styled.div`
@@ -91,4 +94,44 @@ export const DeleteAndEdit = styled.div`
 export const EditInput = styled.input`
   width: 100%;
   height: 100%;
+`;
+
+export const CommentWrapper = styled.div`
+  width: 45vw;
+`;
+
+export const Reply = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ReplyWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.6rem;
+  border: 1px solid gray;
+  background-color: rgba(0, 0, 0, 0.1);
+`;
+
+export const ReplyListWrapper = styled.div`
+  background-color: rgba(0, 0, 0, 0.1);
+`;
+
+export const ReplyItem = styled.div`
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  font-size: 14px;
+  padding-left: 0.5rem;
+`;
+
+export const ReplyButton = styled.button`
+  width: 100px;
+  height: 3rem;
+  color: white;
+  text-align: center;
+  background-color: #5664f5;
 `;
