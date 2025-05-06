@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeaderLayout = styled.div`
-  width: 100vw;
   height: 8rem;
   display: flex;
   align-items: center;

@@ -57,11 +57,13 @@ export const CommentlistWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  height: 50vh;
+  overflow: auto;
 `;
 
 export const CommentItemLayout = styled.div`
-  width: 85%;
-  height: 4rem;
+  width: 45vw;
+  height: 50px;
   border: 1px solid gray;
   display: flex;
   justify-content: space-between;
