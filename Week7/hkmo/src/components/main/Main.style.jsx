@@ -73,7 +73,7 @@ export const TodoText = styled.div``;
 
 export const DeleteButton = styled.button`
   width: 50px;
-
+  height: 30px;
   border: 1px solid grey;
 `;
 
