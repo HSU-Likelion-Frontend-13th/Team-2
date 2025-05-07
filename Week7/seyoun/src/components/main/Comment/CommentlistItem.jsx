@@ -35,7 +35,8 @@ export default function CommentItem({commentText, commentlist, setCommentlist}) 
                     )
                     : (<S.CommentText>{commentText}</S.CommentText>)
             }
-
+            
+        <S.DeleteAndEdit>
             <S.DeleteButton onClick={deleteComment}>삭제</S.DeleteButton>
 
             {
@@ -43,6 +44,7 @@ export default function CommentItem({commentText, commentlist, setCommentlist}) 
                     ? (<S.EditButton onClick={editComment}>수정완료</S.EditButton>)
                     : (<S.EditButton onClick={() => setIsEditing(true)}>수정</S.EditButton>)
             }
+            </S.DeleteAndEdit>
         </S.CommentItemLayout>
     );
 }

@@ -5,7 +5,6 @@ export const SectionTitle = styled.div`
   font-weight: 700;
 `;
 
-/* TodoComment */
 export const CommentListLayout = styled.div`
   width: 60vw;
 `;
@@ -90,10 +89,18 @@ export const EditButton = styled.button`
 
 export const DeleteAndEdit = styled.div`
   display: flex;
-  gap: 0.3rem;
+  justify-content: flex-end;
+  gap: 1rem;
 `;
 
 export const EditInput = styled.input`
   width: 100%;
   height: 100%;
+`;
+
+export const CommentInput = styled.input`
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid gray;
+  padding: 0.3rem;
 `;
