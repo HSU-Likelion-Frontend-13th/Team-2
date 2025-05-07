@@ -85,6 +85,7 @@ export const EditButton = styled.button`
   width: 50px;
   height: 30px;
   border: 1px solid grey;
+  font-size : 0.8rem;
 `;
 
 export const DeleteAndEdit = styled.div`
